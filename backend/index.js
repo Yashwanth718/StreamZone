@@ -5,6 +5,8 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
+import userRouter from "./routes/user.route.js"
+
 
 connectToDB()
 .then( () => {
@@ -18,3 +20,5 @@ connectToDB()
 .catch( (err) => {
   console.log(err)
 } )
+
+app.use("/api/users",userRouter)
