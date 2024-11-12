@@ -59,6 +59,7 @@ const Hr = styled.hr`
 `
 
 const Login = styled.div``
+
 const Button = styled.button`
   padding: 5px 15px;
   background-color: transparent;
@@ -71,6 +72,13 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 5px;
+`
+
+const Title = styled.h2`
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-botton: 20px;
 `
 
 function Menu({darkMode,setDarkMode}) {
@@ -108,6 +116,9 @@ function Menu({darkMode,setDarkMode}) {
           <Button><AccountCircleOutlinedIcon/>Sign in</Button>
         </Login>
         <Hr/>
+        <Title>
+          BEST OF STREAMZONE
+        </Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music
